@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAGIS 30th Anniversary</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style2.css">
+
 </head>
+
 <body>
 
-    <div id="CAGIS30Years-Gallery1" class="CAGIS30Years-Gallery1">
+    <!-- <div id="galleryCAGIS30Years-Gallery1" class="gallery CAGIS30Years-Gallery1">
         <img class="mySlides1" src="./assets/g1.jpg">
         <img class="mySlides1" src="./assets/g2.jpg">
         <img class="mySlides1" src="./assets/g3.jpg">
@@ -19,7 +21,7 @@
         <img class="closeGallery" id="closeGallery1" src="./assets/closeButton.png">
     </div>
 
-    <div id="CAGIS30Years-Gallery2" class="CAGIS30Years-Gallery2">
+    <div id="CAGIS30Years-Gallery2" class="gallery CAGIS30Years-Gallery2">
         <img class="mySlides2" src="./assets/g4.jpg">
         <img class="mySlides2" src="./assets/g5.jpg">
         <img class="mySlides2" src="./assets/g6.jpg">
@@ -28,39 +30,48 @@
         <img class="closeGallery" id="closeGallery2" src="./assets/closeButton.png">
     </div>
 
-    <div id="CAGIS30Years-Gallery3" class="CAGIS30Years-Gallery3">
+    <div id="CAGIS30Years-Gallery3" class="gallery AGIS30Years-Gallery3">
         <img class="mySlides3" src="./assets/g1.jpg">
         <img class="mySlides3" src="./assets/g3.jpg">
         <img class="mySlides3" src="./assets/g5.jpg">
         <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         <img class="closeGallery" id="closeGallery3" src="./assets/closeButton.png">
-    </div>
+    </div> -->
 
-                
+
     <div id="grid" class="grid">
         <header>
+            <!-- <img class="photoBorder" src="assets/border.png"> -->
             <h1>CAGIS 30th Anniversary</h1>
-
         </header>
-        <figure  class="fig fig--1" style="--aspect-ratio: 3/4;">
-          <img id="CAGIS30Years" src='./assets/g1.jpg' alt='CAGIS 1'>
-        </figure>
-        <p>CAGIS main events during these 30 years.</p>
+        <div class="page">
+            <div class="image1">
+                <h2>CAGIS main events</h2>
+                <div class="photo">
+                    <img id="CAGIS30Years" src='./assets/g1.jpg' alt='CAGIS 1'>
+                </div>
+            </div>
+            <div class="image2">
+                <h2>Before and Then</h2>
+                <div class="photo">
+                    <img id="BeforeThen" src='./assets/g2.jpg' alt='CAGIS 1'>
+                </div>
+            </div>
+            <div class="image3">
+                <h2>Books by CAGIS.</h2>
+                <div class="photo">
+                    <img id="Books" src='./assets/g3.jpg' alt='CAGIS 1'>
+                </div>
+            </div>
 
-        
-        <figure class="fig fig--2" style="--aspect-ratio: 4/3;">
-            <img id="BeforeThen" src='./assets/g2.jpg' alt='CAGIS 1'>
-        </figure>
-        <p>Before and Then</p>
+        </div>
 
-        <figure  class="fig fig--3" style="--aspect-ratio: 3/4;">
-            <img id="Books" src='./assets/g3.jpg' alt='CAGIS 1'></figure>
-        <p>Books created by CAGIS.</p>
-      </div>
-      
-      
-    </body>
+    </div>
 
-    <script src="galleryCode.js"></script>
+
+</body>
+
+<!-- <script src="galleryCode.js"></script> -->
+
 </html>
