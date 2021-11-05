@@ -12,8 +12,17 @@
 
 <script>
     function hello(color) {
-        alert("Hello " + color);
+        let id = color+"Open";
+        let element = document.getElementById(id);
+        element.style.display='block';
+        element.style.backgroundColor=color;
+    }
 
+    function closeBook(color) {
+        let id = color+"Open";
+        let element = document.getElementById(id);
+        element.style.display='none';
+        
     }
 </script>
 
@@ -21,48 +30,55 @@
 
     <h1>CAGIS 30th Anniversary</h1>
 
-    <div class="bookshelf1">
-        <div class="book bookRed" onclick="hello('red')">
-            Hello My Friend
+    <main>
+        <div class="bookshelf1">
+            <div class="book bookRed" onclick="hello('red')">
+                Hello My Friend
+            </div>
+            <div class="book bookBlue" onclick="hello('blue')">
+                Hello My Friend
+            </div>
+            <div class="book bookGreen" onclick="hello('green')">Hello My Friend
+            </div>
+            <div class="book bookYellow" onclick="hello('yellow')">Hello My Friend
+            </div>
+
+            <div class="bottle"></div>
         </div>
-        <div class="book bookBlue" onclick="hello('blue')">
-            Hello My Friend
-        </div>
-        <div class="book bookGreen" onclick="hello('green')">Hello My Friend
-        </div>
-        <div class="book bookYellow" onclick="hello('yellow')">Hello My Friend
+        <div class="shelf">ALUMNI STORIES </div>
         </div>
 
-        <div class="bottle"></div>
+        <div class="bookshelf2">
+
+            <div class="book bookGray" onclick="hello('red')">
+                There we are
+            </div>
+            <div class="book bookGreen" onclick="hello('blue')">
+                Here and again
+            </div>
+            <div class="book bookBlue" onclick="hello('green')">
+                My first event
+            </div>
+            <div class="book bookYellow" onclick="hello('yellow')">
+                Hello Hellow
+            </div>
+
+            <!-- <div class="planet"><div class="planetImage"></div> -->
+
+        </div>
+        <div class="shelf">EVENTS </div>
+        </div>
+    </main>
+    <div class="redOpen" id="redOpen" >
+        <button onclick="closeBook('red')">Close Red!</button>
     </div>
-    <div class="shelf">ALUMNI STORIES </div>
-    </div>
 
-    <div class="bookshelf2">
-
-        <div class="book bookGray" onclick="hello('red')">
-            There we are
-        </div>
-        <div class="book bookGreen" onclick="hello('blue')">
-            Here and again
-        </div>
-        <div class="book bookBlue" onclick="hello('green')">
-            My first event
-        </div>
-        <div class="book bookYellow" onclick="hello('yellow')">
-            Hello Hellow
-        </div>
-
-        <!-- <div class="planet"><div class="planetImage"></div> -->
-
-
-
-    </div>
-    <div class="shelf">EVENTS </div>
+    <div class="redOpen" id="greenOpen" >
+        <button onclick="closeBook('green')">Close Green!</button>
     </div>
 
 
-<footer>&copy Ana Rodrigues 2021</footer>
+    <footer>&copy Ana Rodrigues 2021</footer>
 
 </body>
 
