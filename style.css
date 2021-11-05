@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: white;
     color: black;
     background-size: 100% auto;
@@ -18,14 +20,21 @@ h1{
     margin-bottom: 120px;
 }
 
-.bookshelf1{
+.bookshelf1,
+.bookshelf2{
     display: grid;
-    grid-template-columns: 68px 50px 80px 100px auto;
     text-align: center;
     width: 50%;
-    margin: 0 auto;
-    height: auto;
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 200px;
     align-items:center;
+}
+
+.bookshelf1,
+.bookshelf2{
+    grid-template-columns: 68px 50px 80px 100px auto;
+    
 }
 
 .book,
@@ -43,7 +52,6 @@ h1{
 .bookRed{
     background-image: linear-gradient(to bottom, darkred, rgb(205,0,0), darkred);
     transform: rotate(-80deg);
-    margin-right: 30px;
     color: black;
 }
 .bookBlue{
@@ -62,8 +70,15 @@ h1{
 
 }
 
-.bottle{
-    background-image: url(./images/bottle.png);    
+.bookGray{
+    background-image: linear-gradient(to bottom, darkgrey, gray, darkgrey);
+    transform: rotate(-80deg);
+    color: black;
+}
+
+.bottle,
+.planet,
+.planetImage{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -72,6 +87,15 @@ h1{
     margin: 0;
     border: none;
     transform: rotate(0deg);
+}
+
+.bottle{
+    background-image: url(./images/bottle.png);    
+}
+
+.planetImage{
+    background-image: url(./images/planet.png);    
+    height: 120px;
 }
 
 .shelf{
@@ -83,8 +107,51 @@ h1{
     padding: 10px;
 }
 
-@media (max-width: 768px) {
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 600px) {
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .book{
+        width: 150px;
+        height: 20px;
+        padding: 5px 0px;
+    }
+
+    .bookYellow{
+        transform: rotate(80deg);
+    }
+
+    .bookshelf1,
+    .bookshelf2{
+        height: 155px;
+        width: 100%;
+        grid-template-columns: 40px 30px 44px 40px auto;
+    }
+    .bottle{
+        height: 150px;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+   .planet{
+       width: 150px;
+   }
+    
+    .shelf{
+        margin-top: 0px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
     }
 }
