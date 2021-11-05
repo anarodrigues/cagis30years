@@ -82,3 +82,9 @@ h1{
     margin: 0 auto;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 3rem;
+    }
+}
